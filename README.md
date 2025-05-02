@@ -12,4 +12,4 @@ In the second stage, a new weight function, \( r(x; a) \), was introduced, based
 
 ## 3. Outcomes Demonstration
 
-Furthermore, I have furnished a demonstration of the outcomes of the two phases (Chinese version).
+Furthermore, I have furnished a demonstration of the outcomes of the two phases (in Chinese).
