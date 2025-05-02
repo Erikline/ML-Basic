@@ -1,15 +1,15 @@
-# Project Overview
+# 项目概述
 
-The project is divided into two distinct phases:
+该项目分为两个不同的阶段：
 
-## 1. Initial Phase
+## 1. 初始阶段
 
-The first phase is predicated upon a linear hypothesis space and a multitude of activation functions, including the Softmax function. The model solves for the weight \( w \) based on mean square loss, cross-entropy loss, and hinge loss. It is combined with multiple optimisation algorithms, including stochastic and batch gradient descent methods. Finally, the optimal classification model for solving this sentiment analysis binary classification in linear space is **Lasso regression** based on gradient descent.
+第一阶段基于线性假设空间，并使用多种激活函数，包括Softmax函数。模型通过均方误差、交叉熵损失和铰链损失来求解权重 \( w \)，并结合多种优化算法，包括随机梯度下降和批量梯度下降方法。最终，针对该情感分析二分类问题，最优的分类模型是基于梯度下降的 **Lasso回归**。
 
-## 2. Second Phase
+## 2. 第二阶段
 
-In the second stage, a new weight function, \( r(x; a) \), was introduced, based on the nonlinear assumption space of the Gaussian kernel function. The final classification function remains within the linear assumption space. The parameter \( a \) in the weight function \( r(x; a) \) can be solved using the **L-BFGS-B** optimisation algorithm. Finally, the combination of mean square loss, logistic loss, and hinge loss, along with the solution of the weight parameter \( θ \) via the L-BFGS-B optimisation algorithm, demonstrates that the **IWL model** outperforms the unweighted LSC algorithm on the test set. The **SC (Important Weight Least Squares Classification)** algorithm, which incorporates the weight function \( r(x; a) \), has been demonstrated to be more accurate than the unweighted LSC algorithm. This enhanced accuracy is subjected to a comprehensive analysis.
+在第二阶段，引入了一个新的权重函数 \( r(x; a) \)，该函数基于高斯核函数的非线性假设空间。最终的分类函数仍然保持在线性假设空间内。权重函数 \( r(x; a) \) 中的参数 \( a \) 可以通过 **L-BFGS-B** 优化算法来求解。最终，结合均方误差、逻辑回归损失和铰链损失，并通过L-BFGS-B优化算法求解权重参数 \( θ \)，证明 **IWL模型** 在测试集上比无权重LSC算法具有更高的准确性。包含权重函数 \( r(x; a) \) 的 **SC（重要权重最小二乘分类）** 算法的准确性也优于无权重LSC算法。对此增强的准确性进行了全面分析。
 
-## 3. Outcomes Demonstration
+## 3. 结果演示
 
-Furthermore, I have furnished a demonstration of the outcomes of the two phases (in Chinese).
+此外，我还提供了这两个阶段结果的演示（中文版本）。
